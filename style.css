@@ -23,10 +23,11 @@ body {
 }
 
 .right {
-    background-color: #0e131e;
+    background-color: #191c24;
     display: grid;
     place-items: center;
     border-radius: 10px;
+    border: dashed 2px white;
 }
 
 .right h1 {
@@ -85,4 +86,101 @@ body {
 
 body {
     background-color: black;
+}
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: rgb(38, 37, 37);
+    text-align: center;
+ }
+ .contacto {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(143, 140, 140);
+    color: rgb(38, 37, 37);
+    text-align: center;
+ }
+
+ .glow {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007be6, 0 0 40px #007be6, 0 0 50px #007be6, 0 0 60px #007be6, 0 0 70px #007be6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #2289e3, 0 0 40px #2289e3, 0 0 50px #2289e3, 0 0 60px #2289e3, 0 0 70px #2289e3, 0 0 80px #2289e3;
+    }
+  }
+
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .inicio {
+        width: 100%;
+        height: 400px;
+        background-image: url('telescopio.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 1px solid rgb(255, 255, 255);
+      }
+
+.estrellita {
+    text-align: right;
 }
