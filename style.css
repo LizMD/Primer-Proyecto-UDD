@@ -1,186 +1,259 @@
+/* Es el cuadro que va a hablar de la tienda */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 600px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 600px;
+  padding-bottom: 40px;
 }
+
 .left {
-    background: url(Imagen\ principal.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: aqua;
+  background: url(Imagen\ principal.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
 }
 
 .right {
-    background-color: #191c24;
-    display: grid;
-    place-items: center;
-    border-radius: 10px;
-    border: dashed 2px white;
+  background-color: #191c24;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  border: dashed 2px white;
 }
 
 .right h1 {
-    color: white;
-    font-size: 2.3rem;
-    line-height: 2.3rem;
-    font-weight: 900;
-    margin-left: 5%;
-    margin-right: 5%;
+  color: white;
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+  font-weight: 900;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .right h2 {
-    color: rgb(218, 212, 212);
-    font-size: 1.1rem;
-    font-weight: 100;
-    font-stretch: narrower;
-    word-spacing: 5px;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+  color: rgb(218, 212, 212);
+  font-size: 1.1rem;
+  font-weight: 100;
+  font-stretch: narrower;
+  word-spacing: 5px;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .right p {
-    color: rgb(218, 212, 212);
-    margin-top: 0.75rem;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+  color: rgb(218, 212, 212);
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .right a {
-    background: rgb(238, 235, 235);
-    color: #111827;
-    padding: 12px 36px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-left: 5%;
-    margin-right: 5%;
+  background: rgb(238, 235, 235);
+  color: #111827;
+  padding: 12px 36px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-
-
 
 @media (max-width:768px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-        height: 700px;
-        margin-top: 0px;
-        .right h2 {
-            margin-top: 20px;
-        }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 700px;
+    margin-top: 0px;
+
+    .right h2 {
+      margin-top: 20px;
     }
+  }
 }
+
+/* Fondo */
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: rgb(38, 37, 37);
-    text-align: center;
- }
- .contacto {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(143, 140, 140);
-    color: rgb(38, 37, 37);
-    text-align: center;
- }
+/* Footer */
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
 
- .glow {
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
-  
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007be6, 0 0 40px #007be6, 0 0 50px #007be6, 0 0 60px #007be6, 0 0 70px #007be6;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #2289e3, 0 0 40px #2289e3, 0 0 50px #2289e3, 0 0 60px #2289e3, 0 0 70px #2289e3, 0 0 80px #2289e3;
-    }
+/* Letrero de descuentos */
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007be6, 0 0 40px #007be6, 0 0 50px #007be6, 0 0 60px #007be6, 0 0 70px #007be6;
   }
 
-  div.gallery {
-    border: 1px solid #ccc;
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #2289e3, 0 0 40px #2289e3, 0 0 50px #2289e3, 0 0 60px #2289e3, 0 0 70px #2289e3, 0 0 80px #2289e3;
   }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
+}
+
+/* Los telescopios con descuentos */
+
+div.gallery {
+  border: 1px solid white;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
   .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+    width: 49.99999%;
+    margin: 6px 0;
   }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .inicio {
-        width: 100%;
-        height: 400px;
-        background-image: url('telescopio.jpg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        border: 1px solid rgb(255, 255, 255);
-      }
-
-.estrellita {
-    text-align: right;
 }
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* Es el cuadro que va a hablar de la tienda ejemplo 2 */
+
+.container2 {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 600px;
+}
+
+.right2 {
+  background: url(telescopio2.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.left2 {
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.sesion2 {
+  width: 50%;
+  height: 200px;
+  background-color: white;
+}
+
+.sesion3 {
+  width: 51%;
+  height: 290px;
+  background-color: white;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo {
+  display: block;
+  margin-left: auto;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boton {
+  width: 380px;
+  height: 30px;
+  margin-left: 0px;                
+  background: yellow;
+  color: black;
+  text-align: center;
+  border-radius: 25px;
+}
+
+
+
+  @media (max-width:768px) {
+    .container2 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+      height: 700px;
+      margin-top: 0px;
+
+      .left2 h2 {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  /* El navbar */
+  .navbar {
+    background-color: white !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; !important
+  }
+
+ .form-group {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+
+
+  .otro {
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 370px;
+    margin-bottom: 40px;
+  }
