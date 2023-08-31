@@ -14,6 +14,7 @@
     integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/58028f3245.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -47,6 +48,9 @@
             </li>
           </ul>
         </div>
+        <span class="navbar-item">
+          <a class="nav-link" href="#">Iniciar Sesión</a>
+          </span>
       </div>
     </nav>
 
@@ -64,20 +68,24 @@
           </div>
 
           <div class="sesion3">
-            <p class="text-base"><h4>Si siempre has querido un telescopio, acércate a nosotros y te la enviamos, <b>¡vivas
-              donde vivas!</b></h4></p>
+            <p class="text-base">
+            <h4>Si siempre has querido un telescopio, acércate a nosotros y te la enviamos, <b>¡vivas
+                donde vivas!</b></h4>
+            </p>
 
-            
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1"><b>¡Ingresa tú email y recibe descuentos exclusivos, promociones y mucho más!</b></label>
-                  <br>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ejemplo@gmail.com">
-                </div>
+
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1"><b>¡Ingresa tú email y recibe descuentos exclusivos, promociones y mucho
+                    más!</b></label>
                 <br>
-                <button type="submit" class="btn btn-dark">SUSCRIBIRSE</button>
-              </form>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Ejemplo@gmail.com">
+              </div>
               <br>
+              <button type="submit" class="btn btn-dark">SUSCRIBIRSE</button>
+            </form>
+            <br>
           </div>
         </div>
       </div>
@@ -86,10 +94,14 @@
       <! – Aquí tenemos el aviso de los descuentos –>
         <h1 class="glow">Nuestros Descuentos</h1>
 
-        <h3 class="otro"><b>¡Revisa los mejores descuentos que tenemos para ti!</b></h3>
+        <div class="otro">
+          <p>NUEVOS</p>
+          <h3><b>Telescopios recién llegados</b></h3>
+          <h5><b>¡Revisa los mejores descuentos que tenemos para ti!</b></h5>
+        </div>
 
         <! – Aquí tenemos los telescopio con descuentos –>
-          
+
           <div class="responsive">
             <div class="gallery">
               <a target="_blank" href="moonmap.webp">
@@ -190,14 +202,35 @@
             </div>
 
             <! – Aquí tenemos el footer –>
-              <footer>
-                ¡Te esperamos!
-                Horario de atención: Lunes a viernes 10:30 - 19:00
-                Dirección: Monjitas 708 (esquina Mac Iver) Santiago, Chile.
-                <p>© 2023. Todos los derechos reservados. Esta es una página de aterrizaje ficticia para fines
-                  académicos.</p>
-                <b><p>Github: LizMD</p></b>
-              </footer>
+
+
+            <section class="footer">
+              <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </div>
+
+              <ul class="list">
+                <li>
+                  <a href="#">Inicio</a>
+                </li>
+                <li>
+                  <a href="#">Descuentos</a>
+                </li>
+                <li>
+                  <a href="#">¿Quiénes Somos?</a>
+                </li>
+                <li>
+                  <a href="#">Contacto</a>
+                </li>
+                <li>
+                  <a href="#">Iniciar Sesión</a>
+                </li>
+              </ul>
+              <p class="copyright">© 2023. Todos los derechos reservados. Esta es una página de aterrizaje ficticia para fines
+                académicos.</p>
+            </section>
 
 </body>
 
