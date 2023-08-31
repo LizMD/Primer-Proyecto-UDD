@@ -77,7 +77,7 @@ body {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
-    height: 700px;
+    height: 1100px;
     margin-top: 0px;
 
     .right h2 {
@@ -220,7 +220,7 @@ div.desc {
   }
 }
 
-/* Es el cuadro que va a hablar de la tienda ejemplo 2 */
+/* Es el cuadro que va a hablar de la tienda ejemplo */
 
 .container2 {
   margin-top: 0px;
@@ -266,8 +266,6 @@ div.desc {
 }
 
 .boton {
-  width: 380px;
-  height: 30px;
   margin-left: 0px;                
   background: yellow;
   color: black;
@@ -280,8 +278,9 @@ div.desc {
   @media (max-width:768px) {
     .container2 {
       grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
       grid-template-rows: 1fr 2fr;
-      height: 700px;
+      height: 1100px;
       margin-top: 0px;
 
       .left2 h2 {
