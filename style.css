@@ -77,7 +77,7 @@ body {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
-    height: 1100px;
+    height: 1150px;
     margin-top: 0px;
 
     .right h2 {
